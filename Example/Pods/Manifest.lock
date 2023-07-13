@@ -1,0 +1,16 @@
+PODS:
+  - CZDatePicker (1.0.0)
+
+DEPENDENCIES:
+  - CZDatePicker (from `../`)
+
+EXTERNAL SOURCES:
+  CZDatePicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CZDatePicker: 7b1a97e9423ebce7601776cd078100c7f7002650
+
+PODFILE CHECKSUM: bf9d3e3e901a7ff7f267fb7361d818661f6bf00d
+
+COCOAPODS: 1.12.1

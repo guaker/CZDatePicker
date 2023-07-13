@@ -1,0 +1,6 @@
+framework module CZDatePicker {
+  umbrella header "CZDatePicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
