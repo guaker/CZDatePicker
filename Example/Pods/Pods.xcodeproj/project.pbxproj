@@ -11,7 +11,7 @@
 		19BD8C260BCD031C55B61C12B6EF81BE /* CZDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B59B7019CF0262DFD0708489C9DAA /* CZDatePicker.swift */; };
 		1AA7D7E0C50BE6873A27500D17E8BC37 /* CZConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA1C3FA14FF72B2D570689D99F44423 /* CZConstant.swift */; };
 		220313292204AE5187852DC64698B4E6 /* Pods-CZDatePicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DDEFF44F0E82967E31E0DBB5CF7F110A /* Pods-CZDatePicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B33DA9E7BC7E17CBEC8A5B0F23676EC /* CZDatePicker+PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A3AED17C1A26CB3703CAEB5A18F6D /* CZDatePicker+PickerView.swift */; };
+		2B33DA9E7BC7E17CBEC8A5B0F23676EC /* CZDatePicker+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A3AED17C1A26CB3703CAEB5A18F6D /* CZDatePicker+Delegate.swift */; };
 		2C43A2407EC1C47DEEC9AB301D777730 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		47BB9CAD6D01E30E5EE2568CCAC3CD26 /* String+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2A241AA0BA0504210327DFABD7B79F /* String+Category.swift */; };
 		5581246E0FDB28C0E17FB789C78F08F3 /* Pods-CZDatePicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBD028BC92003276F6578D06A107C78 /* Pods-CZDatePicker_Tests-dummy.m */; };
@@ -46,13 +46,13 @@
 /* Begin PBXFileReference section */
 		011ECF93893F3977015639723A00C02A /* CZDatePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CZDatePicker.release.xcconfig; sourceTree = "<group>"; };
 		041C065DDD90DBFD541703D2437BCAAB /* Pods-CZDatePicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CZDatePicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		04A7E2D12792DECEDC8A2D8F91BF8A9C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		04A7E2D12792DECEDC8A2D8F91BF8A9C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0CAC736080EC6EDCDCAA3F48B6BBA601 /* CZDatePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CZDatePicker-Info.plist"; sourceTree = "<group>"; };
 		0D4649CDDD44CE35B9DD0A4352B32791 /* CZDatePicker+Subviews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CZDatePicker+Subviews.swift"; path = "CZDatePicker/Classes/CZDatePicker+Subviews.swift"; sourceTree = "<group>"; };
 		13838D2E23C6E8E44DD405207E0FD046 /* Pods-CZDatePicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CZDatePicker_Example.modulemap"; sourceTree = "<group>"; };
 		158B606DF5BD49BF4D11E89D275CB619 /* Pods-CZDatePicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CZDatePicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C33B8D3446CF5E8B7179445158D5FCC /* Pods-CZDatePicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CZDatePicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		377A3AED17C1A26CB3703CAEB5A18F6D /* CZDatePicker+PickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CZDatePicker+PickerView.swift"; path = "CZDatePicker/Classes/CZDatePicker+PickerView.swift"; sourceTree = "<group>"; };
+		377A3AED17C1A26CB3703CAEB5A18F6D /* CZDatePicker+Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CZDatePicker+Delegate.swift"; path = "CZDatePicker/Classes/CZDatePicker+Delegate.swift"; sourceTree = "<group>"; };
 		3C2A241AA0BA0504210327DFABD7B79F /* String+Category.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Category.swift"; path = "CZDatePicker/Classes/String+Category.swift"; sourceTree = "<group>"; };
 		4A77CE0FCDC07E6FD564122A2446770C /* CZDatePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CZDatePicker.debug.xcconfig; sourceTree = "<group>"; };
 		4AA843245CADD67DD66C80ADA7A77B6A /* Pods-CZDatePicker_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CZDatePicker_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		4DD5334EEBDEF6348A897ED203EAD350 /* CZDatePicker+Category.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CZDatePicker+Category.swift"; path = "CZDatePicker/Classes/CZDatePicker+Category.swift"; sourceTree = "<group>"; };
 		52DC08F9E61409BE6ACADB8C382C7A6E /* Pods-CZDatePicker_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CZDatePicker_Example-Info.plist"; sourceTree = "<group>"; };
 		5DA1C3FA14FF72B2D570689D99F44423 /* CZConstant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CZConstant.swift; path = CZDatePicker/Classes/CZConstant.swift; sourceTree = "<group>"; };
-		5F7B35B0FFB28DFBAA9FB772458898E5 /* CZDatePicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CZDatePicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5F7B35B0FFB28DFBAA9FB772458898E5 /* CZDatePicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CZDatePicker.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		66FCAC6984E55D13A8F371526C6F30AB /* UIImage+Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Color.swift"; path = "CZDatePicker/Classes/UIImage+Color.swift"; sourceTree = "<group>"; };
 		6999B6754A28044E0EA7802CAD03951D /* CZDatePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CZDatePicker-prefix.pch"; sourceTree = "<group>"; };
 		6E98BBC8B33CAE8B513F116D808FB274 /* CZDatePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CZDatePicker-dummy.m"; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		806B59B7019CF0262DFD0708489C9DAA /* CZDatePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CZDatePicker.swift; path = CZDatePicker/Classes/CZDatePicker.swift; sourceTree = "<group>"; };
 		812392071812BA670B1126E6C9095DCA /* Pods-CZDatePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CZDatePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8EAAC3CA82130D9A22D4533581E4F5AE /* Pods-CZDatePicker_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CZDatePicker_Tests"; path = Pods_CZDatePicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0F3DAC41A76E4401384A7158A825D0B /* CZDatePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CZDatePicker.modulemap; sourceTree = "<group>"; };
 		A937B7AE75D075F4A601D378BE774A7E /* Pods-CZDatePicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CZDatePicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AB5137EFA0487F4FCB7CC89CB3B5C846 /* Pods-CZDatePicker_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CZDatePicker_Example"; path = Pods_CZDatePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,7 +81,7 @@
 		C68D911F01175749A4FC93921DF3DF6B /* Pods-CZDatePicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CZDatePicker_Tests-umbrella.h"; sourceTree = "<group>"; };
 		DBBD028BC92003276F6578D06A107C78 /* Pods-CZDatePicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CZDatePicker_Tests-dummy.m"; sourceTree = "<group>"; };
 		DDEFF44F0E82967E31E0DBB5CF7F110A /* Pods-CZDatePicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CZDatePicker_Example-umbrella.h"; sourceTree = "<group>"; };
-		ED65B964190EDD897E1CABFA36CB7253 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		ED65B964190EDD897E1CABFA36CB7253 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F28E1E78AB6BDAC5AA4F268B7D5921AD /* Pods-CZDatePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CZDatePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F29B49D9F4EE8DFAE50CC175B917AE8E /* CZDatePicker */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CZDatePicker; path = CZDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -135,14 +135,14 @@
 		791E5A792BDAC0D59F80A00FDE4AD997 /* CZDatePicker */ = {
 			isa = PBXGroup;
 			children = (
-				5DA1C3FA14FF72B2D570689D99F44423 /* CZConstant.swift */,
-				806B59B7019CF0262DFD0708489C9DAA /* CZDatePicker.swift */,
-				4DD5334EEBDEF6348A897ED203EAD350 /* CZDatePicker+Category.swift */,
-				7AE00FADDCC4DF8F9793084896E8806B /* CZDatePicker+Model.swift */,
-				377A3AED17C1A26CB3703CAEB5A18F6D /* CZDatePicker+PickerView.swift */,
-				0D4649CDDD44CE35B9DD0A4352B32791 /* CZDatePicker+Subviews.swift */,
 				3C2A241AA0BA0504210327DFABD7B79F /* String+Category.swift */,
 				66FCAC6984E55D13A8F371526C6F30AB /* UIImage+Color.swift */,
+				5DA1C3FA14FF72B2D570689D99F44423 /* CZConstant.swift */,
+				806B59B7019CF0262DFD0708489C9DAA /* CZDatePicker.swift */,
+				7AE00FADDCC4DF8F9793084896E8806B /* CZDatePicker+Model.swift */,
+				4DD5334EEBDEF6348A897ED203EAD350 /* CZDatePicker+Category.swift */,
+				377A3AED17C1A26CB3703CAEB5A18F6D /* CZDatePicker+Delegate.swift */,
+				0D4649CDDD44CE35B9DD0A4352B32791 /* CZDatePicker+Subviews.swift */,
 				914EEE2FC12C719809913340946F12B4 /* Pod */,
 				B2E2F1D5C64EE5CA9BA39447BF70BB39 /* Support Files */,
 			);
@@ -400,7 +400,7 @@
 				19BD8C260BCD031C55B61C12B6EF81BE /* CZDatePicker.swift in Sources */,
 				FE96CF71784141A7511D39E9555DAF55 /* CZDatePicker+Category.swift in Sources */,
 				C7B2453076BB693911C8A5F938ACD913 /* CZDatePicker+Model.swift in Sources */,
-				2B33DA9E7BC7E17CBEC8A5B0F23676EC /* CZDatePicker+PickerView.swift in Sources */,
+				2B33DA9E7BC7E17CBEC8A5B0F23676EC /* CZDatePicker+Delegate.swift in Sources */,
 				14EA3ED3C1DB8DED927A5F30BFCF48BF /* CZDatePicker+Subviews.swift in Sources */,
 				99385BCFA28321459C6B6BCCD661645F /* CZDatePicker-dummy.m in Sources */,
 				47BB9CAD6D01E30E5EE2568CCAC3CD26 /* String+Category.swift in Sources */,
@@ -589,8 +589,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

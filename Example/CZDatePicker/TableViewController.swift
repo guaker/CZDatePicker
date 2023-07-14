@@ -31,7 +31,18 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let datePicker = CZDatePicker()
-        datePicker.model = .date
+        
+        switch indexPath.row {
+        case 0:
+            datePicker.model = .year
+        case 1:
+            datePicker.model = .yearAndMonth
+        case 2:
+            datePicker.model = .date
+        default:
+            datePicker.model = .dateAndTime
+        }
+        
         datePicker.modalPresentationStyle = .overFullScreen
         datePicker.modalTransitionStyle = .crossDissolve
         self.present(datePicker, animated: true, completion: nil)

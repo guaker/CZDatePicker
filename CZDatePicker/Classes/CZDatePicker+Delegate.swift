@@ -1,5 +1,5 @@
 //
-//  CZDatePicker.swift
+//  CZDatePicker+Delegate.swift
 //  doctor
 //
 //  Created by guaker on 2022/10/26.
@@ -19,7 +19,7 @@ extension CZDatePicker: UIPickerViewDataSource, UIPickerViewDelegate {
         return self.dataArray[component].count
     }
     
-    private func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+    public func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         let titleLabel = UILabel()
         titleLabel.font = font16pt
         titleLabel.text = self.dataArray[component][row] + self.units[component]
@@ -27,7 +27,7 @@ extension CZDatePicker: UIPickerViewDataSource, UIPickerViewDelegate {
         return titleLabel
     }
     
-    private func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         switch self.model {
         case .year:
             self.indexYear = row

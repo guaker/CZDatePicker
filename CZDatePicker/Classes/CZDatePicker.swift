@@ -11,13 +11,12 @@ import UIKit
 public class CZDatePicker: UIViewController, UIGestureRecognizerDelegate {
     
     //参数
-    var selectCallBack:((Date, String) -> Void)? //闭包
-    public var model: CZDatePicker.Mode = .date
-    var value: String? //值
-    var min: String? //最小值
-    var max: String? //最大值
+    public var selectCallBack:((Date, String) -> Void)? //闭包
+    public var model: CZDatePicker.Model = .date
+    public var value: String? //值
+    public var min: String? //最小值
+    public var max: String? //最大值
     
-    //当前页面使用
     var pickerView: UIPickerView!
     var indexYear: Int = 0
     var indexMonth: Int = 0

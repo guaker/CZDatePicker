@@ -1,5 +1,5 @@
 //
-//  CZDatePicker.swift
+//  CZDatePicker+Model.swift
 //  doctor
 //
 //  Created by guaker on 2022/10/26.
@@ -10,7 +10,7 @@ import UIKit
 
 extension CZDatePicker {
     
-    public enum Mode: Int {
+    public enum Model: Int {
         case year         = 0
         case yearAndMonth = 1
         case date         = 2
