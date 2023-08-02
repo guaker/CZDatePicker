@@ -5,9 +5,4 @@ platform :ios, '10.0'
 target 'CZDatePicker_Example' do
   pod 'CZDatePicker', :path => '../'
 
-  target 'CZDatePicker_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
