@@ -7,6 +7,9 @@
 
 ## Example
 
+![Simulator Screenshot - iPhone 15 Pro - 2023-12-09 at 18 08 20](https://github.com/guaker/CZDatePicker/assets/11344680/bf9f6844-9e67-4c1e-ad91-9557423d020a)
+
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
