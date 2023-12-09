@@ -11,6 +11,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		E15E29A113F3112B46766830 /* Pods_CZDatePicker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11ACA66B4219A872D66F7C1B /* Pods_CZDatePicker_Example.framework */; };
+		E32DC3E12B246C2C003FB5A1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32DC3E02B246C2C003FB5A1 /* TableViewCell.swift */; };
 		E34F45462A6008E40019468A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F45452A6008E40019468A /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		C2704D1FF67F3EB59DAE3ACA /* Pods-CZDatePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CZDatePicker_Example.debug.xcconfig"; path = "Target Support Files/Pods-CZDatePicker_Example/Pods-CZDatePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C31829FB68308046B4F04AC2 /* CZDatePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CZDatePicker.podspec; path = ../CZDatePicker.podspec; sourceTree = "<group>"; };
 		D670047815EA3350F72A6649 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E32DC3E02B246C2C003FB5A1 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		E34F45452A6008E40019468A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				E32DC3E02B246C2C003FB5A1 /* TableViewCell.swift */,
 				E34F45452A6008E40019468A /* TableViewController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -225,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32DC3E12B246C2C003FB5A1 /* TableViewCell.swift in Sources */,
 				E34F45462A6008E40019468A /* TableViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
@@ -349,6 +353,9 @@
 			baseConfigurationReference = C2704D1FF67F3EB59DAE3ACA /* Pods-CZDatePicker_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR5L9EM26Y;
 				INFOPLIST_FILE = CZDatePicker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +365,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -368,6 +376,9 @@
 			baseConfigurationReference = 844A3F16E487AF81F3ED59B6 /* Pods-CZDatePicker_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KMJ9NCH63C;
 				INFOPLIST_FILE = CZDatePicker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -377,6 +388,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};

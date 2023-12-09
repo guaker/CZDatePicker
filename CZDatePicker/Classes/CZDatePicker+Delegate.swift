@@ -21,9 +21,17 @@ extension CZDatePicker: UIPickerViewDataSource, UIPickerViewDelegate {
     
     public func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         let titleLabel = UILabel()
-        titleLabel.font = font16pt
+        
+        switch self.model {
+        case .dateAndTime:
+            titleLabel.font = font16pt
+        default:
+            titleLabel.font = font20pt
+        }
+        titleLabel.textColor = colorTitle
         titleLabel.text = self.dataArray[component][row] + self.units[component]
         titleLabel.textAlignment = .center
+        
         return titleLabel
     }
     
@@ -45,7 +53,7 @@ extension CZDatePicker: UIPickerViewDataSource, UIPickerViewDelegate {
             default:
                 self.indexMonth = row
             }
-        case .date:
+        case .date, .week:
             switch component {
             case 0:
                 self.indexYear = row
@@ -137,6 +145,9 @@ extension CZDatePicker: UIPickerViewDataSource, UIPickerViewDelegate {
             default:
                 self.indexMinute = row
             }
+        default:
+            //系统datePicker类型
+            break
         }
     }
     

@@ -19,13 +19,29 @@ extension CZDatePicker {
         backgroundView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(backgroundView)
         
-        //pickerView
-        self.pickerView = UIPickerView()
-        self.pickerView.showsSelectionIndicator = true
-        self.pickerView.delegate = self
-        self.pickerView.dataSource = self
-        self.pickerView.translatesAutoresizingMaskIntoConstraints = false
-        backgroundView.addSubview(self.pickerView)
+        //判断类型
+        switch self.model {
+        case .time, .countDownTimer:
+            //datePicker
+            self.datePicker = UIDatePicker()
+            if #available(iOS 13.4, *) {
+                self.datePicker.preferredDatePickerStyle = .wheels
+            }
+            self.datePicker.translatesAutoresizingMaskIntoConstraints = false
+            backgroundView.addSubview(self.datePicker)
+            
+            //适配暗黑模式
+            self.datePicker.setValue(colorTitle, forKeyPath: "textColor")
+            self.datePicker.setValue(false, forKey: "highlightsToday")
+        default:
+            //pickerView
+            self.pickerView = UIPickerView()
+            self.pickerView.showsSelectionIndicator = true
+            self.pickerView.delegate = self
+            self.pickerView.dataSource = self
+            self.pickerView.translatesAutoresizingMaskIntoConstraints = false
+            backgroundView.addSubview(self.pickerView)
+        }
         
         //分割线
         let line1View = UIView()
@@ -61,7 +77,7 @@ extension CZDatePicker {
         
         //设置autoLayout
         let viewsDictionary: [String: UIView] = ["backgroundView": backgroundView,
-                                                 "pickerView": self.pickerView,
+                                                 "pickerView": self.pickerView ?? self.datePicker,
                                                  "line1View": line1View,
                                                  "cancelButton": cancelButton,
                                                  "line2View": line2View,

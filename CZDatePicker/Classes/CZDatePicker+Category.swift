@@ -17,13 +17,20 @@ extension CZDatePicker {
             self.processYear()
         case .yearAndMonth:
             self.processYearAndMonth()
-        case .date:
+        case .date, .week:
             self.processDate()
         case .dateAndTime:
             self.processDateAndTime()
+        case .time:
+            //系统datePicker类型
+            self.datePicker.datePickerMode = .time
+            //系统datePicker类型
+        case .countDownTimer:
+            self.datePicker.datePickerMode = .countDownTimer
         }
     }
     
+    /// 年
     private func processYear() {
         let date = self.processValue("yyyy")
         let year = String(format: "%04d", self.getYear(date))
@@ -39,6 +46,7 @@ extension CZDatePicker {
         self.pickerView.selectRow(self.indexYear, inComponent: 0, animated: true)
     }
     
+    /// 年月
     private func processYearAndMonth() {
         let date = self.processValue("yyyy-MM")
         let year = String(format: "%04d", self.getYear(date))
@@ -58,6 +66,7 @@ extension CZDatePicker {
         self.pickerView.selectRow(self.indexMonth, inComponent: 1, animated: true)
     }
     
+    /// 年月日
     private func processDate() {
         let date = self.processValue("yyyy-MM-dd")
         let year = String(format: "%04d", self.getYear(date))
@@ -81,6 +90,7 @@ extension CZDatePicker {
         self.pickerView.selectRow(self.indexDay, inComponent: 2, animated: true)
     }
     
+    /// 年月日时分
     private func processDateAndTime() {
         let date = self.processValue("yyyy-MM-dd HH:mm")
         let year = String(format: "%04d", self.getYear(date))
@@ -152,6 +162,11 @@ extension CZDatePicker {
     /// 根据日期获取分
     func getMinute(_ date: Date) -> Int {
         return NSCalendar.current.component(.minute, from: date)
+    }
+    
+    /// 根据日期获取周
+    func getWeekOfYear(_ date: Date) -> String {
+        return "\(NSCalendar.current.component(.yearForWeekOfYear, from: date))第\(NSCalendar.current.component(.weekOfYear, from: date))周"
     }
     
     /// 年数据
@@ -314,10 +329,13 @@ extension CZDatePicker {
             return [self.years]
         case .yearAndMonth:
             return [self.years, self.months]
-        case .date:
+        case .date, .week:
             return [self.years, self.months, self.days]
         case .dateAndTime:
             return [self.years, self.months, self.days, self.hours, self.minutes]
+        default:
+            //系统datePicker类型
+            return []
         }
     }
     
@@ -350,6 +368,23 @@ extension CZDatePicker {
             let str = year + "-" + month + "-" + day + " " + hour + ":" + minute
             
             return (str.date("yyyy-MM-dd HH:mm"), str)
+        case .week:
+            let year = self.years[self.indexYear]
+            let month = self.months[self.indexMonth]
+            let day = self.days[self.indexDay]
+            let str = year + "-" + month + "-" + day
+            let date = str.date("yyyy-MM-dd") ?? Date()
+            let week = self.getWeekOfYear(date)
+            
+            return (date, week)
+        case .time:
+            let date = self.datePicker.date
+            let time = date.string("HH:mm")
+            return (date, time)
+        case .countDownTimer:
+            //倒计时
+            let second = self.datePicker.countDownDuration
+            return (nil, String(second))
         }
     }
     

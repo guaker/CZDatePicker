@@ -17,6 +17,8 @@ public class CZDatePicker: UIViewController, UIGestureRecognizerDelegate {
     public var min: String? //最小值
     public var max: String? //最大值
     
+    //私有属性
+    var datePicker: UIDatePicker!
     var pickerView: UIPickerView!
     var indexYear: Int = 0
     var indexMonth: Int = 0

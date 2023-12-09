@@ -16,8 +16,13 @@ let LINE_SIZE: CGFloat = 1.0 / UIScreen.main.scale
 
 let font16pt = UIFont.systemFont(ofSize: 16)
 
+let font20pt = UIFont.systemFont(ofSize: 20)
+
 //主题颜色
 let colorTheme        = UIColor(red: 97/255.0, green: 126/255.0,  blue: 204/255.0,  alpha: 1.0)
+
+//标题颜色
+let colorTitle        = UIColor(red: 0/255.0,   green: 0/255.0,   blue: 0/255.0,   alpha: 1.0)
 
 //详情颜色
 let colorDetail       = UIColor(red: 81/255.0, green: 81/255.0, blue: 81/255.0, alpha: 1.0)

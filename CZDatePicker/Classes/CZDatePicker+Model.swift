@@ -11,10 +11,16 @@ import UIKit
 extension CZDatePicker {
     
     public enum Model: Int {
-        case year         = 0
-        case yearAndMonth = 1
-        case date         = 2
-        case dateAndTime  = 3
+        //自定义pickerView
+        case year           = 1
+        case yearAndMonth   = 2
+        case date           = 3 //使用自定义的
+        case dateAndTime    = 4 //使用自定义的
+        case week           = 5
+        
+        //系统datePicker
+        case time           = 6
+        case countDownTimer = 7 //倒计时（值：秒）
     }
     
 }
