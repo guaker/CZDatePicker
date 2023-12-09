@@ -7,8 +7,7 @@
 
 ## Example
 
-![Simulator Screenshot - iPhone 15 Pro - 2023-12-09 at 18 08 20](https://github.com/guaker/CZDatePicker/assets/11344680/bf9f6844-9e67-4c1e-ad91-9557423d020a)
-
+![WX20231209-181739@2x](https://github.com/guaker/CZDatePicker/assets/11344680/941339c1-5108-41d2-81cd-864f1d214817)
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
